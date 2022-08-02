@@ -1,0 +1,104 @@
+*{transition: all 0.5s;}
+
+.header{
+    position: relative;
+}
+
+.header h2{
+    margin-top: 1%;
+}
+.header h2 a{
+    text-align: center;
+}
+.header h2 img{
+    width: 80%;
+    height: 80%;
+}
+.header svg{
+    display: block;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #3f51b5;
+    width: 10%;
+    height: 40%;
+}
+
+.header .wrap{
+    width: 100%;
+}
+
+.header .wrap p{
+    display: none;
+}
+
+.header .wrap h2{
+    width: 100%;
+}
+.header .wrap h2 a{
+    margin: auto;
+}
+.header .menu{
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+    right: 0;
+    width: 30%;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+    justify-content: end;
+    background: white;
+}
+.header ul{
+    width: 100%;
+    visibility: visible;
+    flex-wrap: wrap;
+}
+.header li{
+    width: 100%;
+    padding: 5%;
+}
+
+.header li::before{
+    content: '';
+    display: none;
+}
+
+.slide{
+    width: 100%;
+    margin: 0;
+}
+.slide ul::before{
+    padding-top: 40%;
+}
+
+.main{
+    width: 100%;
+}
+.main h2{
+    width: 100%;
+    height: 100px;
+}
+
+.main ul{
+    width: 90%;
+    height: 100%;
+    display: block;
+}
+.main li{
+    width: 60%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.main li:nth-child(1){
+    padding-top: 0;
+}
+.main li:nth-child(3){
+    padding-bottom: 0;
+}
+
