@@ -1,0 +1,367 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'establishRetrosansOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+body{
+    color: #333;
+}
+a:link , a:visited{
+    text-decoration: none;
+    color: #333;
+}
+
+.header svg{
+    display: none;
+}
+.header{
+    width: 100%;
+}
+
+.header .wrap{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header .wrap::before{
+    content: '';
+    display: block;
+    padding-top: 13%;
+}
+.header .wrap p{
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    right: 0;
+}
+.header .wrap button{
+    width: 80px;
+    height: 35px;
+    font: 15px 'Nanum Gothic';
+    background: transparent;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.header h2{
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+
+.header h2 img{
+    width: 90%;
+    height: 90%;
+}
+.header .menu{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 45%;
+    display: flex;
+    align-items: flex-end;
+}
+.header ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header li{
+    width: 25%;
+    height: 40px;
+    text-align: center;
+    position: relative;
+}
+.header li a:link,
+.header li a:visited{
+    font: bold 0.9em 'Nanum Gothic';
+    line-height: 40px;
+}
+.header li::before{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    display: block;
+    height: 20px;
+    top: 10px;
+    left: 100%;
+    transform: translateX(-100%);
+    background: transparent;
+    border-right: 1px solid rgb(230, 230, 230);
+}
+
+.header li:last-child::before{
+    border: 0;
+}
+
+.slide{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide ul{
+    width: 100%;
+
+}
+.slide ul::before{
+    content: '';
+    display: block;
+    padding-top: 35%;
+}
+.slide li{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 80%;
+    margin: auto;
+}
+
+.main h2{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main h2 p{
+    font: 800 1.7em 'Nanum Gothic';
+    background: -webkit-linear-gradient(left, #1743c7, #06ccb2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main ul{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main li{
+    width: 30%;
+    margin-bottom: 10%;
+}
+
+.main dl{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    
+}
+
+.main dt{
+    width: 100%;
+    border-top: 2px solid rgb(200, 200, 200);
+    padding-bottom: 5%;
+    box-sizing: border-box;
+}
+
+
+/* 에스코어드림 제목 */
+.main li:nth-child(1) p:nth-child(1){
+    font: bold 1.5em 'S-CoreDream-6Bold';
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+
+/* 잉크립퀴드 제목 */
+.main li:nth-child(2) dt p:nth-child(1){
+    font: bold 1.5em 'InkLipquid';
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+/* 검은고딕 제목 */
+.main li:nth-child(3) dt p:nth-child(1){
+    font: 1.5em 'Black Han Sans', sans-serif;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+/* 설립체 제목 */
+.main li:nth-child(4) dt p:nth-child(1){
+    font: 1.5em 'establishRetrosansOTF';
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+/* 원스토어 모바일 제목 */
+.main li:nth-child(5) dt p:nth-child(1){
+    font: 1.5em 'ONE-Mobile-POP';
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+/* 이사만루 제목 */
+.main li:nth-child(6) dt p:nth-child(1){
+    font: 1.5em 'GongGothicMedium';
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+
+/* 에스코어드림 설명 */
+.main li:nth-child(1) p:nth-child(2),
+.main li:nth-child(1) p:nth-child(3){
+    font: bold 0.9em 'S-CoreDream-3Light';
+}
+
+/* 잉크립퀴드 설명 */
+.main li:nth-child(2) p:nth-child(2),
+.main li:nth-child(2) p:nth-child(3){
+    font: 0.9em 'InkLipquid';
+}
+
+/* 검은고딕 설명 */
+.main li:nth-child(3) p:nth-child(2),
+.main li:nth-child(3) p:nth-child(3){
+    font: 0.9em 'Black Han Sans', sans-serif;
+}
+
+/* 설립체 설명 */
+.main li:nth-child(4) p:nth-child(2),
+.main li:nth-child(4) p:nth-child(3){
+    font: 0.9em 'establishRetrosansOTF';
+}
+
+/* 원스토어 모바일 설명 */
+.main li:nth-child(5) p:nth-child(2),
+.main li:nth-child(5) p:nth-child(3){
+    font: 0.9em 'ONE-Mobile-POP';
+}
+
+/* 이사만루 설명 */
+.main li:nth-child(6) p:nth-child(2),
+.main li:nth-child(6) p:nth-child(3){
+    font: 0.9em 'GongGothicMedium';
+}
+
+.main dd{
+    width: 100%;
+    margin: auto;
+}
+.main dd img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer{
+    width: 100%;
+    height: 25vh;
+    background: #333;
+    position: relative;
+}
+.footer .wrap{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+}
+.footer ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .wrap li:nth-child(1) img{
+    width: 40%;
+}
+.footer li:nth-child(1) p{
+    font: 0.7em 'Nanum Gothic';
+    color: white;
+}
+.footer li:nth-child(2){
+    text-align: end;
+}
+.footer li:nth-child(2) a{
+    font: 0.8em 'Nanum Gothic';
+    color: white;
+    text-decoration: underline;
+}
+
+.footer li:nth-child(2) dl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+.footer li:nth-child(2) dt,
+.footer li:nth-child(2) dd{
+    margin: 15px 0px 0px 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer li:nth-child(2) dt img,
+.footer li:nth-child(2) dd img{
+    width: 100%;
+    height: 100%;
+}

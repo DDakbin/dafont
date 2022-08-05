@@ -1,0 +1,175 @@
+*{transition: all 0.5s;}
+
+.header{
+    position: relative;
+}
+
+.header h2{
+    margin-top: 1%;
+}
+.header h2 a{
+    text-align: center;
+}
+.header h2 img{
+    width: 50%;
+    height: 50%;
+}
+.header svg{
+    display: block;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #3f51b5;
+    width: 10%;
+    height: 40%;
+}
+
+.header .wrap{
+    width: 100%;
+}
+
+.header .wrap p{
+    display: none;
+}
+
+.header .wrap h2{
+    width: 100%;
+}
+.header .wrap h2 a{
+    margin: auto;
+}
+.header .menu{
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    overflow: hidden;
+    transition: all 0.5s;
+    justify-content: end;
+    background: white;
+}
+.header ul{
+    width: 100%;
+    visibility: visible;
+    flex-wrap: wrap;
+}
+.header li{
+    width: 100%;
+    padding: 5%;
+}
+
+.header li::before{
+    content: '';
+    display: none;
+}
+
+.slide{
+    width: 100%;
+    margin: 0;
+}
+.slide ul::before{
+    padding-top: 40%;
+}
+
+.main{
+    width: 100%;
+}
+.main h2{
+    margin: auto;
+    width: 80%;
+}
+.main h2 p{
+    font: 800 1.4em 'Nanum Gothic';
+}
+
+.main ul{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap
+}
+.main li{
+    width: 100%;
+}
+
+
+/* 에스코어드림 제목 */
+.main li:nth-child(1) p:nth-child(1){
+    font: bold 1.3em 'S-CoreDream-6Bold';
+}
+
+/* 잉크립퀴드 제목 */
+.main li:nth-child(2) dt p:nth-child(1){
+    font: bold 1.3em 'InkLipquid';
+}
+
+/* 검은고딕 제목 */
+.main li:nth-child(3) dt p:nth-child(1){
+    font: 1.3em 'Black Han Sans', sans-serif;
+}
+
+/* 설립체 제목 */
+.main li:nth-child(4) dt p:nth-child(1){
+    font: 1.3em 'establishRetrosansOTF';
+}
+
+/* 원스토어 모바일 제목 */
+.main li:nth-child(5) dt p:nth-child(1){
+    font: 1.3em 'ONE-Mobile-POP';
+}
+
+/* 이사만루 제목 */
+.main li:nth-child(6) dt p:nth-child(1){
+    font: 1.3em 'GongGothicMedium';
+}
+
+.footer{
+    height: 30vh;
+}
+.footer .wrap{
+    height: 100%;
+}
+.footer ul{
+    position: relative;
+    display: block;
+}
+.footer .wrap li:nth-child(1) img{
+    width: 30%;
+}
+.footer li:nth-child(1){
+    margin-top: 10%;
+}
+.footer li:nth-child(2){
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer li:nth-child(2) a{
+    font: 0.5em 'Nanum Gothic';
+    color: white;
+    text-decoration: underline;
+}
+.footer li:nth-child(2) dl{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.footer li:nth-child(2) dt,
+.footer li:nth-child(2) dd{
+    margin: 15px 0px 0px 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer li:nth-child(2) dt img,
+.footer li:nth-child(2) dd img{
+    width: 80%;
+    height: 80%;
+}
